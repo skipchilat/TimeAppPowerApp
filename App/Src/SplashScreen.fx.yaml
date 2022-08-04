@@ -1,0 +1,55 @@
+SplashScreen As screen:
+    BackgroundImage: =
+    ImagePosition: =ImagePosition.Center
+
+    Rectangle3 As rectangle:
+        Width: =640
+        ZIndex: =1
+
+    CheckOutButon As button:
+        Height: =70
+        OnSelect: =Navigate(TimeSheetScreen)
+        Size: =24
+        Text: ="Check Out"
+        Width: =280
+        X: =320
+        Y: =871
+        ZIndex: =4
+
+    CheckinButton As button:
+        Height: =70
+        OnSelect: =Navigate(CheckInScreen, ScreenTransition.Cover);NewForm(CheckinForm)
+        Size: =24
+        Text: ="Check In"
+        Width: =280
+        X: =22
+        Y: =871
+        ZIndex: =5
+
+    Name As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =70
+        Size: =21
+        Text: ="Time Tracker"
+        Width: =560
+        X: =40
+        Y: =15
+        ZIndex: =6
+
+    WelcomeText As label:
+        Height: =70
+        Size: =21
+        Text: ="Welcome to CenKen Group, Please check in"
+        Width: =578
+        X: =22
+        Y: =574
+        ZIndex: =7
+
+    CompanyLogo As image:
+        Height: =288
+        Image: =Logo
+        Width: =310
+        X: =160
+        Y: =151
+        ZIndex: =8
+

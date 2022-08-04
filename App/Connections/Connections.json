@@ -1,0 +1,50 @@
+{
+  "45bd3375-285e-422a-9add-3fa78c0f2262": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Users",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1587/1.0.1587.2924/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Users"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "45bd3375-285e-422a-9add-3fa78c0f2262"
+  },
+  "6f2655c3-73cb-4d0f-add0-8761a2ca93fe": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1588/1.0.1588.2938/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://cenkennet.sharepoint.com/sites/Administration": {
+        "dataSources": {
+          "Time Tracker": {
+            "tableName": "30c893cc-bd25-464d-9dd6-5e72452ae863"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Time Tracker"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "6f2655c3-73cb-4d0f-add0-8761a2ca93fe"
+  }
+}
